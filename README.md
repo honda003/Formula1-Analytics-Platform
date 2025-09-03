@@ -113,7 +113,7 @@ graph TD;
 ## 🌐 Project Structure & Usage
 
 
-analysis Folder: Contains scripts for finding and visualizing dominant drivers and teams:
+### analysis Folder: Contains scripts for finding and visualizing dominant drivers and teams:
 
 1.find_dominant_drivers.py: Identifies dominant drivers.
 2.find_dominant_teams.py: Identifies dominant teams.
@@ -121,7 +121,7 @@ analysis Folder: Contains scripts for finding and visualizing dominant drivers a
 4.viz_dominant_teams.py: Visualizes dominant teams.
 
 
-images Folder: Contains project screenshots:
+### images Folder: Contains project screenshots:
 
 f1_dashboard.png: Power BI dashboard snapshot.
 pl_ingest_formula1_data.png: ADF pipeline for ingestion.
@@ -129,13 +129,13 @@ pl_process_formula1_data.png: ADF pipeline for processing.
 pl_transform_formula1_data.png: ADF pipeline for transformation.
 
 
-includes Folder: Contains common utilities and configuration:
+### includes Folder: Contains common utilities and configuration:
 
 common_functions.py: Shared functions.
 configuration.py: Configuration settings.
 
 
-ingestion Folder: Contains scripts for data ingestion:
+### ingestion Folder: Contains scripts for data ingestion:
 
 1.ingest_circuits_file.py: Ingests circuits data.
 2.ingest_races_file.py: Ingests races data.
@@ -148,12 +148,13 @@ ingestion Folder: Contains scripts for data ingestion:
 9.create_processed_database.py: Creates processed database.
 
 
-raw Folder: Contains scripts for raw data setup:
+### raw Folder: Contains scripts for raw data setup:
 
 1.create_raw_table.py: Creates raw tables.
 
 
-set-up Folder: Contains setup scripts for access and mounting:
+### set-up Folder: Contains setup scripts for access and mounting with different types of accessing:
+Note: prefered one is service principal
 
 1.access_adls_using_access_keys.py: Access ADLS with access keys.
 10.mount_adls_containers_for_project.py: Mounts ADLS containers.
@@ -167,7 +168,7 @@ set-up Folder: Contains setup scripts for access and mounting:
 9.mount_adls_using_service_principal.py: Mounts ADLS using service principal.
 
 
-transformations Folder: Contains scripts for data transformations:
+### transformations Folder: Contains scripts for data transformations:
 
 1.race_results.py: Processes race results.
 2.driver_standings.py: Calculates driver standings.
@@ -177,13 +178,13 @@ transformations Folder: Contains scripts for data transformations:
 f1_BI.py: BI-related transformations.
 
 
-utils Folder: Contains utility scripts:
+### utils Folder: Contains utility scripts:
 
 1.prepare_for_incremental_load.py: Prepares for incremental load.
 
 
 
-To run:
+### To run:
 
 Setup Azure Environment:
 
