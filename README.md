@@ -58,25 +58,26 @@ This project was developed as a **Data Engineering Showcase (July 2025)**, const
 
 ```mermaid
 graph TD;
-    A[Ergast API: Raw F1 Data] --> B[Azure Data Factory: Ingestion Trigger];
+    A[Ergast API: Raw F1 Data] --> B[Azure Data Factory Ingestion Trigger];
     B --> C[Bronze Layer: Raw Data in ADLS];
-    C --> D[Silver Layer: Cleaned & Incremental Merge (PySpark)];
+    C --> D[Silver Layer: Cleaned + Incremental Merge PySpark];
     D --> E[Gold Layer: Aggregated Data in Delta Tables];
-    E --> F[Power BI Dashboard: Visualize Drivers, Constructors, Circuits];
+    E --> F[Power BI Dashboard: Visualize Drivers Constructors Circuits];
 
     subgraph "Bronze Layer"
-        C1[Raw JSON/CSV/API Data] --> C
+        C1[Raw JSON CSV API Data] --> C
     end
 
     subgraph "Silver Layer"
-        D1[Clean Data & Apply Incremental Updates] --> D
+        D1[Clean Data and Apply Incremental Updates] --> D
     end
 
     subgraph "Gold Layer"
-        E1[Aggregations & Enriched Data] --> E
+        E1[Aggregations and Enriched Data] --> E
     end
 
-    F --> G[Interactive Filters: Year, Decade, Overall];
+    F --> G[Interactive Filters: Year Decade Overall];
+
 ```
 
 *Overview of the Bronze, Silver, and Gold layers in the data pipeline.*
