@@ -15,7 +15,7 @@
 
 ---
 
-### Medallion Architecture Diagram
+### 🏗️ Architecture 🔥
 ![Architecture](./images/f1_architecture.jpg)
 
 ## 🌟 **Project Overview**  
