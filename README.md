@@ -16,31 +16,7 @@
 ---
 
 ### Medallion Architecture Diagram
-
-```mermaid
-graph TD;
-    A[Ergast API:<br>Raw F1 Data] --> B[Azure Data Factory:<br>Ingestion Trigger];
-    B --> C[Bronze Layer:<br>Raw Data in ADLS];
-    C --> D[Silver Layer:<br>Cleaned + Incremental<br>Merge PySpark];
-    D --> E[Gold Layer:<br>Aggregated Data<br>in Delta Tables];
-    E --> F[Power BI Dashboard:<br>Visualize Drivers<br>Constructors<br>Circuits];
-
-    subgraph "Bronze Layer"
-        C1[Raw JSON<br>CSV<br>API Data] --> C
-    end
-
-    subgraph "Silver Layer"
-        D1[Clean Data<br>Apply Incremental<br>Updates] --> D
-    end
-
-    subgraph "Gold Layer"
-        E1[Aggregations<br>Enriched Data] --> E
-    end
-
-    F --> G[Interactive Filters:<br>Year<br>Decade<br>Overall];
-
-
-```
+![Architecture](./images/f1_architecture.jpg)
 
 ## 🌟 **Project Overview**  
 
