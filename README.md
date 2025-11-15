@@ -71,7 +71,7 @@ This project was developed as a **Data Engineering Showcase (July 2025)**, const
 ![ADF Pipeline for Transformation](images/pl_transform_formula1_data.png)  
 *Screenshot of the transformation pipeline in Azure Data Factory.*
 
-### Power BI Dashboard Snapshot
+### Power BI Dashboard Snapshot (credits goes to miraytopal https://github.com/miraytopal/Formula1-PowerBi-Dashboard)
 ![Power BI Dashboard](images/f1_dashboard.png)  
 *Interactive dashboard visualizing F1 driver and constructor performance.*
 
