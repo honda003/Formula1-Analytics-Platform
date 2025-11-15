@@ -210,3 +210,12 @@ Use Power BI to connect to Gold layer and build the dashboard.
 
 
 Screenshots of ADF pipelines and the Power BI dashboard are included in the images folder.
+
+
+## Credits
+
+This project was originally created by **[Mr. Ramesh Retnasamy](https://www.linkedin.com/in/ramesh-retnasamy/)**.  
+I followed his work and built my version based on his project.
+
+Special thanks as well to **[Ms. Miray Topal](https://github.com/miraytopal/Formula1-PowerBi-Dashboard)**, from whom I took the Power BI dashboard inspiration.
+
